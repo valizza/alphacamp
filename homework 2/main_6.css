@@ -1,0 +1,30 @@
+.container {
+  background-color: #b0eece;
+}
+
+/* Clearfix */
+.container:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0000ff; 
+  float: left;
+
+}
+
+.box:nth-child(2n+1) {
+background-color: red;
+float: right;
+
+}
+
+#bottom	{
+	clear: both;
+}
+
+

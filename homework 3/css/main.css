@@ -1,0 +1,84 @@
+/* CSS Reset */
+
+* {
+box-sizing: border-box;
+
+
+}
+
+html,
+body {
+
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+
+
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li {
+
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix: after {
+	display: block;
+	content:;
+	clear: both;
+}
+
+/* Header */
+
+.logo {
+	float: left;
+}
+
+.logoimage {
+	height: 40px;
+	width: auto;
+
+}
+
+
+
+#header {
+		
+		height: 40px;
+		padding-left: 64px;
+		padding-right: 64px;
+		background-color: #000000;
+}
+
+.logo-image {
+		height: 40px;
+		width: auto;
+}
+
+.nav {
+	float:right;
+
+}
+
+.nav li {
+
+		float: left;
+		list-style-type: none;
+}
+
+.nav a {
+		display: inline-block;
+		padding: 12px;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+.nav a:hover {
+		color: #96ffda
+}
