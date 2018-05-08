@@ -17,6 +17,7 @@ body {
 }
 
 body {
+	box-sizing: border-box;
 
 
 }
@@ -26,6 +27,18 @@ p, ul, ol, li {
 
 	margin: 0;
 	padding: 0;
+}
+
+img {
+
+	width: 100px;
+	height: auto;
+	display: block;
+
+}
+
+section {
+	padding: 10px;
 }
 
 .clearfix: after {
@@ -82,3 +95,59 @@ p, ul, ol, li {
 .nav a:hover {
 		color: #96ffda
 }
+
+.home_bg { 
+
+background-image: url ("image/first-bg-cat.jpg");
+background-size: cover;
+position: absolute;
+background-attachment: fixed;
+width: 100%;
+height: 100%;
+
+}
+
+.container_table {
+
+		padding-top: 20%;
+}
+
+
+.container_table_cell {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+
+}
+.container_table_cell h2 {
+	text-align: center;
+	font-size: 35pt;
+	color: #fff;
+}
+
+.social_icons {
+	font-size:1.5em;
+	color:#fff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 5px;
+	text-align: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
