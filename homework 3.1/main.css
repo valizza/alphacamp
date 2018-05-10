@@ -1,0 +1,212 @@
+/* CSS Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.4em
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a:hover {
+	color: #ff9d00;
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+/* All sections */
+section h2 {
+	margin: 1em 0 1em; /* 1em here = 16px base size * 2.5em font size, which in this case is 40px */
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section h3 {
+	margin: 1em 0 0.5em;
+	font-weight: bold;
+}
+
+section h2:first-child,
+section h3:first-child {
+	margin-top: 0;
+}
+
+.container {
+	padding: 100px 64px;
+}
+
+.button {
+	display: inline-block;
+	border: 1px solid;
+	padding: 10px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #ff9d00;
+	color: #fff;
+}
+
+/* Header */
+
+#header {
+	position: absolute;
+	width: 100%;
+	min-height: 40px;
+
+	padding-left: 64px;
+	padding-right: 64px;
+
+	background-color: #000;
+	z-index: 1;
+}
+
+.logo {
+	float: left;
+}
+
+.logo-image {
+	height: 40px;
+	width: auto;
+}
+
+.nav-list {
+	float: right;
+}
+
+.nav-list li {
+	float: left;
+	list-style-type: none;
+}
+
+.nav-list a {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: transparent url('image/first-bg-cat.jpg') center center no-repeat fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.hero:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.hero__content {
+	position: absolute;
+	width: 50%;
+	top: 40%;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	text-align: center;
+
+	color: #fff;
+
+	z-index: 1;
+}
+
+.hero__title {
+	font-size: 3em;
+	margin-bottom: 1em;
+}
+
+.hero__icon {
+	margin: 1em;
+	color: #fff;
+}
+
+/* About section */
+.summary {
+	display: flex;
+	flex-direction: row;
+}
+
+.col-left,
+.col-right {
+	width: 50%;
+}
+
+.col-right {
+	padding-left: 64px;
+}
+
+.avatar {
+	width: 100%;
+	height: auto;
+}
+
+.skills {
+	margin: 2em 0;
+	list-style-type: none;
+}
+
+.skill {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* All sections */
+
+.service-items {	
+	display: flex;
+	justify-content: center;
+}
+
+.service-item {
+	width: 400px;
+	padding: 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

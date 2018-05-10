@@ -27,13 +27,6 @@ p, ul, ol, li {
 
 	margin: 0;
 	padding: 0;
-}
-
-img {
-
-	width: 100px;
-	height: auto;
-	display: block;
 
 }
 
@@ -46,6 +39,25 @@ section {
 	content:;
 	clear: both;
 }
+
+/*All Sections*/
+
+section h2 {
+margin: 0 0 01em; 
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.container {
+padding: 64px
+	
+}
+
+section h3
+
+
 
 /* Header */
 
@@ -60,13 +72,14 @@ section {
 }
 
 
-
 #header {
 		
 		height: 40px;
 		padding-left: 64px;
 		padding-right: 64px;
 		background-color: #000000;
+		position: fixed;
+		width: 100px;
 }
 
 .logo-image {
@@ -98,7 +111,7 @@ section {
 
 .home_bg { 
 
-background-image: url ("image/first-bg-cat.jpg");
+background-image: url("../image/first-bg-cat.jpg");
 background-size: cover;
 position: absolute;
 background-attachment: fixed;
@@ -108,8 +121,14 @@ height: 100%;
 }
 
 .container_table {
+		display:table;
+		widows: 100px;
+		height: 100px;
+		position: relative;
+		display: table;
+		flex-direction: column;
 
-		padding-top: 20%;
+
 }
 
 
@@ -117,6 +136,9 @@ height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
 
 }
 .container_table_cell h2 {
@@ -134,7 +156,37 @@ height: 100%;
 	padding-top: 5px;
 	text-align: center;
 	
+
+	/*about section*/
+
+
+
 }
+
+.summary {
+	display: flex;
+	flex-direction: row;
+}
+
+.col-left,
+.col-right {
+	width: 50%;
+
+}
+
+.avatar {
+	width: 100%;
+	height: auto;
+
+}
+
+.skills {
+
+		margin: 2em 0;
+		
+}
+
+
 
 
 
