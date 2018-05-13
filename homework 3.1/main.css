@@ -42,9 +42,12 @@ a:hover {
 /* All sections */
 section h2 {
 	margin: 1em 0 1em; /* 1em here = 16px base size * 2.5em font size, which in this case is 40px */
-	font-size: 2.5em;
+	font-size: 2.2em;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: lowercase;
+	text-decoration: underline;
+
+	
 }
 
 section h3 {
@@ -55,6 +58,44 @@ section h3 {
 section h2:first-child,
 section h3:first-child {
 	margin-top: 0;
+}
+
+
+section h4 {
+	margin: 1em 0 0.25em;
+}
+
+section h5 {
+	margin:0.5em 0 0.25em;
+}
+
+section h6 {
+	font-size: 0.85em;
+	margin: 0.15em 0 0.25em;
+	color: #999;
+}
+
+section h7 {
+	margin: 1em 0 1em;
+	margin: 0.15em 0 0.25em;
+	color: #;
+	text-align: left;
+	z-index: 1;
+	width: 50%;
+	top: 40%;
+	font-size: 20px
+}
+
+section h8 {
+	margin: 1em 0 1em;
+	margin: 0.15em 0 0.25em;
+	color: #f6a704;
+	text-align: left;
+	z-index: 1;
+	width: 50%;
+	top: 40%;
+	font-size: 20px;
+	text-decoration: line-through;
 }
 
 .container {
@@ -84,7 +125,7 @@ section h3:first-child {
 	padding-left: 64px;
 	padding-right: 64px;
 
-	background-color: #000;
+	background-color: #;
 	z-index: 1;
 }
 
@@ -95,6 +136,7 @@ section h3:first-child {
 .logo-image {
 	height: 40px;
 	width: auto;
+	margin-left: 80px
 }
 
 .nav-list {
@@ -109,7 +151,7 @@ section h3:first-child {
 .nav-list a {
 	display: inline-block;
 	padding: 12px;
-	color: #fff;
+	color: #000;
 
 	text-decoration: none;
 }
@@ -119,9 +161,10 @@ section h3:first-child {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: transparent url('image/first-bg-cat.jpg') center center no-repeat fixed;
+	background: transparent url('image/bg9.png') center center repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+
 }
 
 .hero:before {
@@ -129,39 +172,46 @@ section h3:first-child {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0);
 }
 
 .hero__content {
 	position: absolute;
-	width: 50%;
+	width: 70%;
 	top: 40%;
 	left: 0;
 	right: 0;
 	margin: auto;
 
+
 	text-align: center;
 
-	color: #fff;
+	color: #da232e;
 
 	z-index: 1;
+
 }
 
 .hero__title {
 	font-size: 3em;
 	margin-bottom: 1em;
+
 }
 
 .hero__icon {
-	margin: 1em;
-	color: #fff;
+	margin: 0.5em;
+	color: #000;
 }
 
 /* About section */
+
+
 .summary {
 	display: flex;
 	flex-direction: row;
+	background-color: #F4E9D6;
 }
+
 
 .col-left,
 .col-right {
@@ -169,7 +219,11 @@ section h3:first-child {
 }
 
 .col-right {
-	padding-left: 64px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
+
+
 }
 
 .avatar {
@@ -187,7 +241,11 @@ section h3:first-child {
 	margin-bottom: 1em;
 }
 
-/* All sections */
+/* Services section */
+
+.my-services {
+	background-color: rgba(220,0,0,0.1);
+}
 
 .service-items {	
 	display: flex;
@@ -199,14 +257,212 @@ section h3:first-child {
 	padding: 0 40px;
 }
 
+.service-item i {
+	font-size: 50px;
 
 
+}
+
+/* Resume section */
+.resume-items {
+
+		display: flex;
+		justify-content: space-between;
 
 
+}
+
+.resume-item {
+	width: 45%;
+
+}
+
+.experience-year {
+
+	display: inline-block;
+	padding: .25em 1em;
+	color: #fff;
+	background-color: #000;
+}
+
+.row {
+	border-bottom: 1px solid #000;
+	padding: 20px 20px 20px;
+}
+
+h2 + .row {  /* row. with and h2 before it*/
+	padding-top: 0;
+}
+
+.row:last-child {
+	border-bottom: none;
+	
+}
 
 
+/* Quotes section */
+
+.quote {
+
+	position: relative;
+	background-image: url('image/lantern-bg.jpg');
+
+	padding-left: 80px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+
+	padding-top: 120px;
+	padding-bottom: 120px;
 
 
+}
+
+.quote h3 {
+				font-size: 1.5em;
+				margin-bottom: 0.25em;
 
 
+}
+
+.quote a {
+		display: inline-block;
+		margin-top: 2em;
+		color: #fff;
+}
+
+.quote:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.25);
+}
+
+.quote .button {
+	padding: 15px 40px;
+
+}
+
+/* Portfolio section */
+
+.work-items {
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.col-work {
+	display: block;
+  margin-bottom: 14px;
+  position: relative;
+ 
+  top: 0;
+  left: 0;
+
+	width: 300px;
+
+	padding: 15px;
+}
+
+.col-work a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.col-work img {
+	display: block;
+
+	width: 100%;
+	height: 270px;
+
+	object-fit: cover;
+}
+
+.col-work a:hover img {
+  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+
+/* Contact section */
+
+.contact-form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	text-align: center;
+	width: 66.66%;
+	margin: 0 auto;
+}
+
+.contact-form .form-input:first-child,
+.contact-form .form-input:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+
+}
+
+.contact-form .form-input:nth-child(3) {
+	display: block;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.form-style {
+	width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.form-submit input{
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 15px 40px;
+  margin-top: 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -ms-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+
+}
+
+.form-submit input:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer section */
+
+.footer
 
