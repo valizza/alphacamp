@@ -39,7 +39,7 @@ a:hover {
 	clear: both;
 }
 
-/* All sections */
+/* ---------------------------- All sections ------------------ */
 section h2 {
 	margin: 1em 0 1em; /* 1em here = 16px base size * 2.5em font size, which in this case is 40px */
 	font-size: 2.2em;
@@ -116,7 +116,7 @@ section h8 {
 	color: #fff;
 }
 
-/* Header */
+/* ---------------------------Header -----------------------------*/
 
 #header {
 	position: absolute;
@@ -158,7 +158,7 @@ section h8 {
 	text-decoration: none;
 }
 
-/* Hero section */
+/* ----------------------Hero section --------------------------*/
 
 .hero {
 	position: relative;
@@ -206,13 +206,14 @@ section h8 {
 	color: #000;
 }
 
-/* About section */
+/* ------------------------------- About section ------------------------------- */
 
 
 .summary {
 	display: flex;
 	flex-direction: row;
 	background-color: #F4E9D6;
+	flex-wrap: wrap;
 }
 
 
@@ -244,19 +245,20 @@ section h8 {
 	margin-bottom: 1em;
 }
 
-/* Services section */
+/* --------------------- Services section ---------------- */
 
 .my-services {
-	background-color: rgba(220,0,0,0.1);
+	background-color: rgba(0,0,0,0);
 }
 
 .service-items {	
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .service-item {
-	width: 400px;
+	width: 33%;
 	padding: 0 40px;
 }
 
@@ -266,11 +268,12 @@ section h8 {
 
 }
 
-/* Resume section */
+/* ------------------------ Resume section ----------------------- */
 .resume-items {
 
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 
 
 }
@@ -303,7 +306,7 @@ h2 + .row {  /* row. with and h2 before it*/
 }
 
 
-/* Quotes section */
+/* --------------------------- Quotes section ------------------------*/
 
 .quote {
 
@@ -353,7 +356,7 @@ h2 + .row {  /* row. with and h2 before it*/
 
 }
 
-/* Portfolio section */
+/* --------------------------Portfolio section --------------------*/
 
 .work-items {
 	text-align: center;
@@ -400,7 +403,7 @@ h2 + .row {  /* row. with and h2 before it*/
 }
 
 
-/* Contact section */
+/* -------------------------Contact section----------------------- */
 
 .contact-form {
 	display: -webkit-flex;
@@ -413,13 +416,14 @@ h2 + .row {  /* row. with and h2 before it*/
 	text-align: center;
 	width: 66.66%;
 	margin: 0 auto;
+	min-width: 600px;
 }
 
 .contact-form .form-input:first-child,
 .contact-form .form-input:nth-child(2) {
 	display: flex;
 	flex-direction: row;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	padding: 10px;
 
@@ -442,7 +446,7 @@ h2 + .row {  /* row. with and h2 before it*/
   outline: none;
 }
 
-.form-submit input{
+.form-submit input {
   font-size: 16px;
   text-transform: capitalize;
   background-color: transparent;
@@ -465,14 +469,14 @@ h2 + .row {  /* row. with and h2 before it*/
   color: #fff;
 }
 
-/* Footer section */
+/* ----------------------Footer section -----------------*/
 
-.contact {
+.footer {
   padding: 80px 0;
   background-color: #000;
   color: #fff;
   text-align: center;
-}
+  }
 
 .footer-content p {
   line-height: 22px;
@@ -486,4 +490,110 @@ h2 + .row {  /* row. with and h2 before it*/
   margin-top: 15px;
   margin-right: 15px;
 }
+
+/*----------------- Tablet and mobile --------------------*/
+
+@media screen and (max-width: 1000px) {
+	.container {
+		padding: 100px 40px;
+	}
+
+
+@media screen and (max-width: 920px) {
+
+			/* About me */
+
+
+.col-left,
+.col-right {
+	width: 100%;
+}
+
+.col-right {
+	padding-left: 0px;
+	margin-top: 40px;
+}
+
+			/* Services */
+
+.service-item {
+	width: 100%;
+	margin-top: 2.5em;
+	padding: 0px;
+}
+
+.service-item:first-child {
+	margin-top: 0;
+}
+
+			/* Resume */
+
+.resume-item {
+width: 100%;
+margin-top: 1em; 
+
+}
+
+.row {
+
+	padding: 50px 0 30px;
+	padding-top: 50px
+	padding-bottom: 30px;
+}
+
+		/* Portfolio */
+
+		.work-items {
+			padding: 0 5px 20px;
+			}
+
+}
+
+@media screen and (max-width: 800px) {
+	.work-items {
+		width: 100%;
+		height: auto;
+	}
+
+				/* Form */
+	.contact-form {
+		display: block;
+		width: 100%;
+		min-width: 0;
+	}
+
+	.form-submit input,
+		.input-wrapper_half {
+			width: 100%;
+	}
+
+}
+
+.footer {
+	padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
