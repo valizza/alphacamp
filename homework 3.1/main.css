@@ -98,6 +98,7 @@ section h8 {
 	text-decoration: line-through;
 }
 
+
 .container {
 	padding: 100px 64px;
 }
@@ -127,20 +128,21 @@ section h8 {
 
 	background-color: #;
 	z-index: 1;
+		
 }
 
 .logo {
-	float: left;
+	float: right;
 }
 
 .logo-image {
 	height: 40px;
 	width: auto;
-	margin-left: 80px
+	justify-content: cent
 }
 
 .nav-list {
-	float: right;
+	float: left;
 }
 
 .nav-list li {
@@ -151,17 +153,18 @@ section h8 {
 .nav-list a {
 	display: inline-block;
 	padding: 12px;
-	color: #000;
+	color: #fff;
 
 	text-decoration: none;
 }
 
 /* Hero section */
+
 .hero {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: transparent url('image/bg9.png') center center repeat fixed;
+	background: transparent url('image/bg3.gif') center center repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 
@@ -184,17 +187,17 @@ section h8 {
 	margin: auto;
 
 
-	text-align: center;
+	text-align: left;
 
-	color: #da232e;
+	color: #fff;
 
 	z-index: 1;
 
 }
 
 .hero__title {
-	font-size: 3em;
-	margin-bottom: 1em;
+	font-size: 7em;
+	margin-bottom: 0.6em;
 
 }
 
