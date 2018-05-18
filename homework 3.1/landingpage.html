@@ -5,6 +5,9 @@
 	<meta name= "viewport" content= "width=device-width, initial-scale=1.0" > 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
@@ -12,14 +15,27 @@
 	<title>Valerie's personal page</title>
 </head>
 <body>
-	<header id="header">
+	
+<header id="header">						
+							
+							
+		<div class= "container" >
 		<div class="clearfix">
 			<nav>
 				<div class="logo">
 					<a href="#header">
-						<img src="image/arrow2.png" alt="logo" class="logo-image">
+						<img src="" alt="logo" class="logo-image">
 					</a>
 				</div>
+								 
+								    <button type= "button" class= "menu-button" > 
+								    ≡ 
+								    </button> 
+								    
+						
+
+
+							
 				<ul class="nav-list clearfix">
 					<li class="nav-item">
 						<a class="nav-link" href="#home">Home</a>
@@ -36,35 +52,42 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
 					</li>
+
+				 
+									
 				</ul>
+	
 			</nav>
+		
 		</div>
-	</header>
+</div>
+</header>
 	<section class="hero">
 		<div class="hero__content">
 
 			<h1 class="hero__title">
 				Valerie Lee  <br>
 			</h1>
-		  <div class="hero__social"><h7>A<h8>nother</h8>  Visual & UX Designer based in Singapore. Get in touch with me on
+		  <div class="hero__social"><h7>A<h8>nother</h8>  Visual & UX Designer based in Singapore. <br> Get in touch with me on
 				<a href="https://github.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 				 or view my 
 				<a href="https://facebook.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-dribbble"></i></a> and my design  </h7>
 				<a href="https://twitter.com/unclenorton" class="hero__icon" target="_blank"><i class="fas fa-pencil-alt"></i></a>.
 
-					<br><br><br><br><br><br><img id="about" src="image/arrowdown1.png" alt="look below" class="logo-image">
 			
 			</div>
 		</div>
+		</div>
+
 	</section>
 
-	<section id="about" class="about container">
+	<section id="about" class="about container-fluid">
 		<h2 class="about-title">About me</h2>
 		<div class="summary">
-			<div class="col-left">
+			<div class="col-md-6">
 				<img src="image/bg.gif" alt="" class="avatar">
 			</div>
-			<div class="col-right">
+			<div class="col-md-6 pt-4 pt-md-0">
 				<div class="personal-info">
 					<h3>Hello </h3>
 					<p>
@@ -80,19 +103,19 @@
 					<li class="skill">and repeat</li>
 				</ul>
 				<div class="button-group">
-					<a href="#" class="button">Download CV</a>
-					<a href="#contact" class="button">Hire me to cat-sit your kitten</a>
+					<a href="#" class="btn btn-secondary">Download CV</a>
+					<a href="#contact" class="btn btn-primary">Hire me to cat-sit your kitten</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!------------------------ What I Offer ------------------------>
+	<!------------------------ Services ------------------------>
 
-	<section id="service" class="my-services container">
+	<section id="service" class="my-services container-fluid">
 		<h2>Treats</h2>
-		<div class="service-items">
-			<div class="service-item">	
+		<div class="row service-items">
+			<div class="col-md-4">	
 
 				<i class="fab fa-angrycreative"></i>
 				<h3>Cupcake</h3>
@@ -100,7 +123,7 @@
 
 			</div>
 
-			<div class="service-item">
+			<div class="col-md-4">
 
 				<i class="fab fa-angrycreative"></i>
 				<h3>Bacon</h3>
@@ -108,7 +131,7 @@
 
 			</div>
 
-			<div class="service-item">	
+			<div class="col-md-4">	
 
 				<i class="fab fa-angrycreative"></i>
 				<h3>Fish</h3>
@@ -121,14 +144,14 @@
 
 	<!------------------------ Resume ------------------------>
 
-	<section class="resume container">
+	<section class="resume container-fluid">
 		<h2>Resume
 		</h2>
 
-		<div class="row">
+		<div class="resume-row">
 			<h3> Education </h3>
-			<div class= "resume-items">
-				<div class= "resume-item">
+			<div class= "row resume-items">
+				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
 					<h4 class="experience-year">
 						2010-2018
 					</h4>
@@ -140,7 +163,7 @@
 					</div>
 				</div>	
 
-				<div class= "resume-item">
+				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
 					<h4 class="experience-year">
 						2010-2018
 					</h4>
@@ -156,8 +179,8 @@
 			
 			<div class="row">
 			<h3> Work Experience </h3>
-			<div class= "resume-items">
-				<div class= "resume-item">
+			<div class= "row resume-items">
+				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
 					<h4 class="experience-year">
 						2010-2018
 					</h4>
@@ -187,11 +210,11 @@
 
 	<!------------------------ Work Together ----------------->
 
-<section id="contact" class="quote cointainer">
+<section id="contact" class="quote cointainer-fluid">
 		<div class="quote-inner">
 			<h3>Let's work together</h3>
 			<p>I'm available for freelance projects </p>
-			<a href=#contact class="button"> Get Quotes</a>
+			<a href=#contact class="btn btn-lg btn-outline-primary"> Get Quotes</a>
 
 		</div>
 </section>
@@ -276,14 +299,11 @@
 
 	<!------------------------ Footer ------------------------>
 
-	<section class="footer container">
-			<div class="container">
+	<section class="footer container-fluid py-4">
+		
 					<div class="footer-content">
 						<p>Copyright</p>
-
 						<div class="footer-social-icon">
-							<ul>dd</ul>
-							<li>ss</li>
 								<div class="footer-social">
 				<a href="https://github.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-github-alt"></i></a>
 				<a href="https://facebook.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -296,7 +316,11 @@
 	</section>	
 
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 
 </body>
