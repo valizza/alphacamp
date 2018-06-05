@@ -14,37 +14,31 @@
 
 	<title>Valerie's personal page</title>
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#nav-list" data-offset="0">
+
 	
-<header id="header">						
-							
-							
-		<div class= "container" >
-		<div class="clearfix">
-			<nav>
-				<div class="logo">
-					<a href="#header">
-						<img src="" alt="logo" class="logo-image">
-					</a>
-				</div>
-								 
-								    <button type= "button" class= "menu-button" > 
-								    ≡ 
-								    </button> 
-								    
-						
+<header id="header">		
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<img src="images/alpha-logo-long.png" alt="AlphaCamp Logo" class="logo-image">
+			</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
 
-							
-				<ul class="nav-list clearfix">
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul id="nav-list" class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
-				
+						<a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#service">Service</a>
+						<a class="nav-link" href="#service">Services</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#portfolio">Portfolio</a>
@@ -52,23 +46,18 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
 					</li>
-
-				 
-									
 				</ul>
-	
-			</nav>
-		
-		</div>
-</div>
+			</div>
+	</nav>
 </header>
+
 	<section class="hero">
 		<div class="hero__content">
 
 			<h1 class="hero__title">
 				Valerie Lee  <br>
 			</h1>
-		  <div class="hero__social"><h7>A<h8>nother</h8>  Visual & UX Designer based in Singapore. <br> Get in touch with me on
+		  <div class="hero__social"><h7>A<h8>nother</h8>  <br> Get in touch with me on
 				<a href="https://github.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 				 or view my 
 				<a href="https://facebook.com/unclenorton" class="hero__icon" target="_blank"><i class="fab fa-dribbble"></i></a> and my design  </h7>
@@ -79,13 +68,20 @@
 		</div>
 		</div>
 
+<div class="hero__scroll">
+			<i class="fas fa-angle-down arrow_one"></i>
+			<i class="fas fa-angle-down arrow_two"></i>
+			<i class="fas fa-angle-down arrow_three"></i>
+		</div>
+
 	</section>
+
 
 	<section id="about" class="about container-fluid">
 		<h2 class="about-title">About me</h2>
 		<div class="summary">
 			<div class="col-md-6">
-				<img src="image/bg.gif" alt="" class="avatar">
+				<img src="image/cat_3.jpg" alt="" class="avatar">
 			</div>
 			<div class="col-md-6 pt-4 pt-md-0">
 				<div class="personal-info">
@@ -144,69 +140,79 @@
 
 	<!------------------------ Resume ------------------------>
 
-	<section class="resume container-fluid">
-		<h2>Resume
+		<section class="resume container-fluid">
+		<h2>
+			Resume
 		</h2>
+		<div class="resume-row">
+			
+			<h3>Education</h3>
+			
+			<div class="row resume-items">
+
+				<div class="resume-item col-lg-6">
+					<h4 class="experience-year">
+						2001 — 2002
+					</h4>
+					<div class="resume-detail">
+						<h5>Computer Science</h5>
+						<h6>Google University, Australia</h6>
+						<p>
+							The register function takes in the users data and a callback function as parameter, it extracts the email password and username from the data object and calls Firebase createUserWithEmailAndPassword function to create a new user. 
+						</p>
+					</div>
+				</div>
+
+				<div class="resume-item col-lg-6">
+					<h4 class="experience-year">
+						2003 — 2004
+					</h4>
+					<div class="resume-detail">
+						<h5>Social Sciences</h5>
+						<h6>Stanford University, California</h6>
+						<p>
+							The login function is similar to the register function but it calls Firebase signInWithEmailAndPassword function to log the user in. If successful, the user object is returned. The user object is then passed to the getUser function in order to retrieve the user object form the Realtime Database.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 		<div class="resume-row">
-			<h3> Education </h3>
-			<div class= "row resume-items">
-				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
-					<h4 class="experience-year">
-						2010-2018
-					</h4>
-					<div class="resume-detail">
-						<h5>apple</h5>
-						<h6>test</h6>
-						<p>eonfish luderick deep sea anglerfish. Eelblenny blue-redstripe danio round stingray Red whalefish razorfish, "pearleye," tubeblenny--Reef triggerfish halibut halfbeak yellow bass. </p>
-
-					</div>
-				</div>	
-
-				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
-					<h4 class="experience-year">
-						2010-2018
-					</h4>
-					<div class="resume-detail">
-						<h5>Alpha</h5>
-						<h6>Google</h6>
-						<p>eonfish luderick deep sea anglerfish. Eelblenny blue-redstripe danio round stingray Red whalefish razorfish, "pearleye," tubeblenny--Reef triggerfish halibut halfbeak yellow bass. </p>
-
-					</div>
-				</div>
-			</div>
-		</div>
+			<h3>Work Experience</h3>
 			
-			<div class="row">
-			<h3> Work Experience </h3>
-			<div class= "row resume-items">
-				<div class= "resume-item col-lg-6 my-4 pt-lg-0">
+			<div class="row resume-items">
+
+				<div class="resume-item col-lg-6">
 					<h4 class="experience-year">
-						2010-2018
+						2004 — 2006
 					</h4>
 					<div class="resume-detail">
-						<h5>Alpha</h5>
-						<h6>Google</h6>
-						<p>eonfish luderick deep sea anglerfish. Eelblenny blue-redstripe danio round stingray Red whalefish razorfish, "pearleye," tubeblenny--Reef triggerfish halibut halfbeak yellow bass. </p>
-
-					</div>
-				</div>	
-
-				<div class= "resume-item">
-					<h4 class="experience-year"> 2010-2018
-					</h4>
-					<div class="resume-detail">
-						<h5>Alpha</h5>
-						<h6>Google</h6>
-						<p>eonfish luderick deep sea anglerfish. Eelblenny blue-redstripe danio round stingray Red whalefish razorfish, "pearleye," tubeblenny--Reef triggerfish halibut halfbeak yellow bass. </p>
-
+						<h5>Doing nothing</h5>
+						<h6>Somewhere</h6>
+						<p>
+							Before we create our actions, we will declare the action types to be used, in the auth module folder, update actionTypes.js file.
+						</p>
 					</div>
 				</div>
+
+				<div class="resume-item col-lg-6">
+					<h4 class="experience-year">
+						2010 — 2018
+					</h4>
+					<div class="resume-detail">
+						<h5>Alphacamp</h5>
+						<h6>Singapore</h6>
+						<p>
+							In the auth module folder, update actions.js file. Each function in our actions file is in charge of calling the appropriate API function and carrying out the right action based on the response returned.
+						</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
-
 	</section>
-
 
 	<!------------------------ Work Together ----------------->
 
@@ -275,27 +281,35 @@
 	<!------------------------ Contact ------------------------>
 
 <section id="contact" class="contact container">
-			<h2 class="about-title">Get In Touch</h2>
-				<form class="contact-form">
+		<h2>Contact me</h2>
 
-						<div class="form-input">
-		            <input type="text" name="name" class="form-style" placeholder="input your name" required>
-		          </div>
+		<form action="index.html" class="row">
+			<div class="form-group col-sm-6">
+				<label for="name">Your name:</label>
+				<input id="name" name="name" type="text" class="form-control">
 
-		          <div class="form-input">
-		            <input type="email" name="email" class="form-style" placeholder="enter your email" required>
-		          </div>
-
-		          <div class="form-input">
-		            <textarea name="textarea" id="message" class="form-style" cols="30" rows="10" placeholder="write message" required></textarea>
-		          </div>
-
-		          <div class="form-submit">
-		            <input type="submit" name="submit" value="submit">
-		          </div>
-					</form>
+			</div>
+			<div class="form-group col-sm-6">
+				<label for="email">Your email:</label>
+				<input id="email" name="email" type="text" class="form-control">
+				<small class="form-text text-muted">Should be like someone@example.com</small>
+			</div>
+			<div class="form-group col-6">
+				<label for="colours">Select colour:</label>
+				<select name="colours" id="colours" class="form-control">
 					
-</section>					
+				</select>
+			</div>
+			<div class="form-group col-12">
+				<label for="message">Your message:</label>
+				<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+				<small class="form-text text-danger d-none" id="messageError">Please write something</small>
+			</div>
+			<div class="form-group col-sm-4">
+				<input type="submit" class="form-control btn btn-primary" value="Send message">
+			</div>
+		</form>
+	</section>	
 
 	<!------------------------ Footer ------------------------>
 
@@ -316,12 +330,13 @@
 	</section>	
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src ="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
+<script src="main.js"> </script>
 
 </body>
 </html>
