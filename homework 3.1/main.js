@@ -32,7 +32,6 @@ $(function(){
   // Assign the event handler to all the links
   for (let i = 0; i < navigationLinks.length; i++) {
   	navigationLinks[i].onclick = function (event) {
-      event.preventDefault();
       event.stopPropagation();
   		changeNavbarColor(i);
   	}
