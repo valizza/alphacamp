@@ -12,17 +12,7 @@ $(function(){
   let textElement = document.querySelector('#message');
   let validationMessageElement = document.querySelector('#messageError');
 
-  // Define the colours
-  let colorArray = ['bg-dark', 'bg-primary', 'bg-warning', 'bg-success', 'bg-danger'];
-
-  function changeNavbarColor(colorClass) {
-  	navbarElement.classList.remove('bg-dark'); // Disable the default colour
-  	headerElement.className = colorArray[colorClass];
-  }
-
-  headerElement.onclick = function () {
-    headerElement.innerHTML = "";
-  }
+  
 
   formElement.addEventListener('submit', function (event) {
     // First, prevent the form from submitting

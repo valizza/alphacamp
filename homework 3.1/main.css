@@ -36,6 +36,7 @@ p {
 	margin: 1em 0;
 }
 
+.nav-list a:hover,
 a:hover {
 	color: #ff9d00;
 }
@@ -104,13 +105,13 @@ section h8 {
 	z-index: 1;
 	width: 50%;
 	top: 40%;
-	font-size: 20px;
-	text-decoration: line-through;
+	font-size: 1em;
+
 }
 
 
 .container {
-	padding: 100px 64px;
+	padding: 50px 64px;
 }
 
 .button {
@@ -145,10 +146,18 @@ section h8 {
 .nav-list a {
 	display: inline-block;
 	padding: 12px;
-	color: #000;
+	color: #ffffff;
 
 	text-decoration: none;
+
 }
+
+.nav-item {
+	color: #fff
+}
+
+
+
 
 
 
@@ -191,7 +200,6 @@ section h8 {
 
 .hero__title {
 	font-size: 4.5em;
-	margin-bottom: 0.6em;
 
 }
 
@@ -200,7 +208,6 @@ section h8 {
 	color: #fff;
 }
 
-}
 
 .hero__scroll {
 	position: absolute;
@@ -320,6 +327,11 @@ section h8 {
 .service-item {
 	width: 33%;
 	padding: 0 40px;
+}
+
+.service-items i {
+	font-size: 4em;
+
 }
 
 /* ------------------------ Resume section ----------------------- */
